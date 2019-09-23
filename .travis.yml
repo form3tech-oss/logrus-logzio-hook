@@ -1,0 +1,12 @@
+language: go
+go:
+- 1.12.x
+env:
+  global:
+  - GO111MODULE=on
+cache:
+  directories:
+  - $GOPATH/pkg/mod
+  - $HOME/.cache/go-build
+script:
+- make ci
